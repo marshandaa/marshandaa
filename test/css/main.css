@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+}
+.v1_2 {
+  width: 100%;
+  height: 1117px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v1_3 {
+  width: 100%;
+  height: 100%;
+  background: rgba(217,217,217,1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v1_6 {
+  width: 792px;
+  height: 811px;
+  background: rgba(246,120,120,1);
+  opacity: 1;
+  position: absolute;
+  top: 186px;
+  left: 103px;
+  border-top-left-radius: 91px;
+  border-top-right-radius: 91px;
+  border-bottom-left-radius: 91px;
+  border-bottom-right-radius: 91px;
+  overflow: hidden;
+}

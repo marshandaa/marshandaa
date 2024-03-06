@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <form action="" name="formbayar">
+       <input type="number" name="nominal" placeholder="nominal" required>
+                </td>
+           <br>
+           <input type="radio" id="Telkomsel" name="provider" value="Telkomsel"><label for="Telkomsel">Telkomsel</label>
+           <input type="radio" id="Indosat" name="provider" value="Indosat"><label for="Telkomsel">Indosat</label>
+           <input type="radio" id="XL" name="provider" value="XL"><label for="XL">XL</label>
+           <br>
+           <button type="button" onclick="proses()" name="submit">Biaya</button>
+    <script>
+        function proses(){
+            var harga;
+            var diskon;
+            nominal-parseInt(document.formbayar.nominal.value);
+            providor=document.formbayar.provider.value;
+            switch(provider){
+                case"Telkomsel":
+                diskon=nominal*0.1;
+                harga=nominal-diskon;
+                alert("Diskon 10% harga menjadi =" +harga);
+                break;
+                case"Indosat":
+                diskon=nominal*0.05;
+                harga=nominal-diskon;
+                alert("Diskon 5% harga menjadi =" +harga);
+                break;
+                case"XL":
+                diskon=nominal*0.02;
+                harga=nominal-diskon;
+                alert("Diskon 2% harga menjadi =" +harga);
+                break;}}
+    </script>
+</body>
+</html>

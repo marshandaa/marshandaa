@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 2</title>
+    <style>
+        fieldset
+        {
+            border-radius: 20px;
+            box-shadow: inset;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: aliceblue;
+        }
+        body
+        {
+            margin-left: 30%;
+            margin-right: 30%;
+            margin-top: 9%;
+            background-image: url(https://wallpaperaccess.com/full/541378.jpg);
+            background-size: cover;
+        }
+        legend
+        {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: auto;
+        }
+        .submit {
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+   <form action="#" method="post">
+    <fieldset>
+        <legend>Akun</legend>
+        <table>
+            <tr>
+                <td><label for="username">Username:</label></td>
+                <td><input type="username" name="username" id="username"></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td><input type="Password" name="password" id="password"></td>
+            </tr>
+            <tr>
+                <td><label for="konfirmasi password">Konfirmasi password:</label></td>
+                <td><input type="password" name="konfirmasi password" id="konfirmasi password"></td>
+            </tr>
+            <tr>
+                <td><label for="nama">Nama:</label></td>
+                <td><input type="text" name="nama" id="nama"></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Jenis kelamin:</label></td>
+                <td><input type="radio" name="nama" id="nama">Pria
+                    <br>
+                    <input type="radio" name="nama" id="nama">Perempuan</td>
+            </tr>
+            <tr>
+                <td><label for="agama">Agama</label></td>
+                <td>
+                    <select name="agama" id="agama">
+                        <option value="option">Agama</option>
+                        <option value="option">Islam</option>
+                        <option value="option">Kristen</option>
+                        <option value="option">Buddha</option>
+                        <option value="option">Hindu</option>
+                        <option value="option">Konhucu</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="alamat">Alamat</label></td>
+                <td><textarea name="alamat" id="alamat" cols="20" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="informasi yang disukai">Informasi yang disukai:</label></td>
+                <td><input type="checkbox" name="olahraga" id="olahraga">Olahraga
+                    <br>
+                    <input type="checkbox" name="travelling" id="travelling">Travelling
+                    <br>
+                    <input type="checkbox" name="kesehatan" id="kesehatan">Kesehatan</td>
+            </tr>
+            <tr>
+                <td><label for="jurusan">Jurusan</label></td>
+                <td>
+                    <select name="jurusan" id="jurusan">
+                        <option value="option">Jurusan</option>
+                        <option value="option">Kedokteran</option>
+                        <option value="option">Kesehatan Masyarakat</option>
+                        <option value="option">Kedokteran gigi</option>
+                        <option value="option">Ilmu komputer dan teknologi informasi</option>
+                        <option value="option">Ilmu budaya</option>
+                        <option value="option">Hukum</option>
+                        <option value="option">Psikologi</option>
+                        <option value="option">Keperawatan</option>
+                        <option value="option">Ilmu sosial dan ilmu politik</option>
+                        <option value="option">Ekonomi bisnis</option>
+                        <option value="option">Pertanian</option>
+                        <option value="option">Matematika dan ilmu pengetahuan alam</option>
+                        <option value="option">Farmasi</option>
+                        <option value="option">Teknik</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+    <table>
+        <tr>
+            <td><input type="submit" value="daftar" class="submit"></td>
+            <td><input type="reset" value="reset" class="submit"></td>
+        </tr>
+    </table>
+   </form> 
+</body>
+</html>

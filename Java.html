@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 3</title>
+    <script type="text/javascript"></script>
+</head>
+<body>
+    <form name="daftar">
+        <table>
+            <tr>
+                <td><input type="number" name="nama" id="input bilangan 1"></td>
+            </tr>
+            <tr>
+                <td><input type="number" name="sandi" id="input bilangan 2"></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="+" onclick="tambah()">
+                    <input type="submit" value="-" onclick="kurang()">
+                    <input type="submit" value="x" onclick="kali()">
+                    <input type="submit" value="/" onclick="bagi()">
+                </td>
+            </tr>
+        </table>
+        <p id="tampilnama"></p>
+    </form>
+    <script>
+        function tambah()
+        {
+            bil1 = document.daftar.nama.value;
+            bil2 = document.daftar.sandi.value;
+
+            hasiltambah = parseInt(bil1) + parseInt(bil2);
+            alert(bil1+"+"+bil2+"="+hasiltambah)
+        }
+        function kurang()
+        {
+            bil1 = document.daftar.nama.value;
+            bil2 = document.daftar.sandi.value;
+
+            hasilkurang = bil1 - bil2;
+            alert(bil1+"-"+bil2+"="+hasilkurang)
+        }
+        function kali()
+        {
+            bil1 = document.daftar.nama.value;
+            bil2 = document.daftar.sandi.value;
+
+            hasilkali = bil1 * bil2;
+            alert(bil1+"x"+bil2+"="+hasilkali) 
+        }
+        function bagi()
+        {
+            bil1 = document.daftar.nama.value;
+            bil2 = document.daftar.sandi.value;
+
+            hasilbagi = bil1 / bil2;
+            alert(bil1+"/"+bil2+"="+hasilbagi)
+        }
+    </script>
+</body>
+</html>
